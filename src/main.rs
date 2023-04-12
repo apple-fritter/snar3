@@ -21,7 +21,7 @@ fn export_messages(input_path: &Path, output_dir: &Path) -> Result<(), Box<dyn s
             .create(true)
             .append(true)
             .open(&filepath)?;
-        writeln!(file, "{}\t{}\t{}", if message.type_ == 1 { "THEM" } else { "ME" }, time, text)?;
+        writeln!(file, "{}\t{}\t{}", if message.type_ == 1 { "THEM" } else { "US" }, time, text)?;
     }
     Ok(())
 }

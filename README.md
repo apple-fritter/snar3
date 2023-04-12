@@ -12,7 +12,7 @@ US     08  24  31      I'm good, thanks. How about you?
 THEM    08  25  17      Doing well, thanks.
 ```
 ## Requirements
-Apart from Rust, the program requires a few dependencies that need to be installed. These dependencies are specified in the Cargo.toml file and include:
+Apart from Rust, the program requires a few dependencies that need to be installed. These dependencies are specified in the `Cargo.toml` file and include:
 * `xml-rs`: This is a crate for parsing XML files. It is used to parse the SMS database file in XML format.
 * `chrono`: This is a crate for working with dates and times. It is used to convert the timestamps in the SMS database file into a human-readable format.
 * `regex`: This is a crate for working with regular expressions. It is used to extract the SMS messages from the XML file.

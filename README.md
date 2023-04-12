@@ -17,7 +17,7 @@ Apart from Rust, the program requires a few dependencies that need to be install
 * `chrono`: This is a crate for working with dates and times. It is used to convert the timestamps in the SMS database file into a human-readable format.
 * `regex`: This is a crate for working with regular expressions. It is used to extract the SMS messages from the XML file.
 
-When you run `cargo build` or `cargo run`, `Cargo` will automatically download and install these dependencies if they are not already installed on your system.
+When you run `cargo build` or `cargo run`, Cargo will automatically download and install these dependencies if they are not already installed on your system.
 
 Apart from these dependencies, the program requires access to the SMS database file on your Android device. You can copy this file to your computer using `Android Debug Bridge (ADB)` or a file transfer tool. The program assumes that the SMS database file is located at `/sdcard/sms/sms-YYYY-MM-DD.xml`, where `YYYY-MM-DD` is the date of the SMS database backup. If your SMS database file is located at a different path or has a different name, you will need to modify the program accordingly.
 

@@ -69,3 +69,7 @@ There are some potential limitations or issues to keep in mind when working with
 * Character encoding: The XML file may contain characters that are not properly handled by Rust's regular expression engine. If this is the case, the program may fail or produce incorrect results.
 
 It's important to thoroughly test this program with various input files and to handle errors and edge cases appropriately to ensure that it works as intended. Please message me with your suggestions!
+
+## License
+
+This script is released under the [MIT License](LICENSE).

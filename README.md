@@ -1,7 +1,7 @@
 # android.SMS-XML_to_TSV
-This program takes an input `XML` file that contains SMS messages as input, and then parses the file using the `xml-rs` crate to extract the relevant information, such as the `sender`, `receiver`, `timestamp`, and `message text`. This program provides a convenient way to export SMS messages from an `XML` file to `TSV` files in a structured and organized format that makes it easy to search, sort, and analyze the data.
+This program provides a convenient way to export SMS messages from an `XML` file to `TSV` files in a structured and organized format that makes it easy to search, sort, and analyze the data.
 
-It then groups the messages by `contact`, `year`, `month`, and `day`, and exports them to TSV files in nested directories based on this grouping. Each TSV file contains the messages for a specific day, and has columns for the `sender`, `timestamp` (formatted as `HH:MM:SS`), and message text.
+It groups the messages by `contact`, `year`, `month`, and `day`, and exports them to TSV files in nested directories based on this grouping. Each TSV file contains the messages for a specific day, and has columns for the `sender`, `timestamp` (formatted as `HH:MM:SS`), and message text.
 
 The program can handle both incoming and outgoing messages and indicates which is which by adding `US` to outgoing messages and `THEM` to incoming messages in the sender column.
 

@@ -1,4 +1,4 @@
-# android.SMS-XML_to_TSV
+# snar3
 This program provides a convenient way to export SMS messages from an `XML` file to `TSV` files in a structured and organized format that makes it easy to search, sort, and analyze the data.
 
 It groups the messages by `contact`, `year`, `month`, and `day`, and exports them to TSV files in nested directories based on this grouping. Each TSV file contains the messages for a specific day, and has columns for the `sender`, `timestamp` (formatted as `HH:MM:SS`), and message text.

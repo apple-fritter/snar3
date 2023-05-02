@@ -126,7 +126,7 @@ dd if=sms-backup.ab bs=24 skip=1 | openssl zlib -d | tar -xvf -
 ```
 > This command extracts the contents of the backup file and creates a file called `backup.xml` that contains your SMS messages.
 
-You can then use the SMS Exporter program to convert the XML file to TSV files for further analysis.
+You can then use snar3 to convert the resulting XML file to TSV files for further analysis.
 
 ## Potential Limitations or Issues
 

@@ -50,6 +50,7 @@ THEM    08  25  17      Doing well, thanks.
 ```
 
 ### File naming and organizational method
+In this example, the root directory contains the `snar3` directory where the program's source code resides, the sms-backup.xml file, and the `exports` directory where the exported files are saved.
 ```
 .
 ├── sms-exporter
@@ -90,7 +91,6 @@ THEM    08  25  17      Doing well, thanks.
                 └── 01
                     └── 2022-09-01-contact3.tsv
 ```
-In this example, the root directory contains the `snar3` directory where the program's source code resides, the sms-backup.xml file, and the `exports` directory where the exported files are saved.
 
 Inside the exports directory, there are subdirectories for each `contact`, named contact1, contact2, contact3, and so on. Each contact directory contains subdirectories for each year, such as 2022, and further subdirectories for each month, such as 08 (August) or 09 (September).
 

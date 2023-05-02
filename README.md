@@ -1,7 +1,10 @@
 # snar3
-This program provides a convenient way to export SMS messages from an `XML` file to `TSV` files in a structured and organized format that makes it easy to search, sort, and analyze the data.
+## Introduction
+snar3 aims to provide a useful tool for exporting and organizing SMS messages in a structured format, facilitating further analysis and processing of the exported data. Specifically, it takes `XML` formatted export, and converts it to a `TSV`  (Tab-Separated Values) file.
 
-It groups the messages by `contact`, `year`, `month`, and `day`, and exports them to TSV files in nested directories based on this grouping. Each TSV file contains the messages for a specific day, and has columns for the `sender`, `timestamp` (formatted as `HH:MM:SS`), and message text.
+It groups the messages by `contact`, `year`, `month`, and `day`, and exports them to TSV files in nested directories based on this grouping.
+
+Each TSV file contains the messages for a specific day, and has columns for the `sender`, `timestamp` (formatted as `HH:MM:SS`), and message text.
 
 The program can handle both incoming and outgoing messages and indicates which is which by adding `US` to outgoing messages and `THEM` to incoming messages in the sender column.
 

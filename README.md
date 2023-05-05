@@ -128,6 +128,29 @@ dd if=sms-backup.ab bs=24 skip=1 | openssl zlib -d | tar -xvf -
 
 You can then use snar3 to convert the resulting XML file to TSV files for further analysis.
 
+## Process Flowchart
+```
+.
+├── Export Messages
+│   ├── Read input file containing SMS messages.
+│   ├── Create instance of MessagesReader to parse messages.
+│   ├── For each message:
+│   │   ├── Extract contact address and sanitize it.
+│   │   ├── Format date, year, month, and time.
+│   │   ├── Modify message text.
+│   │   ├── Generate filename based on date and sanitized contact.
+│   │   ├── Construct directory path for output file.
+│   │   ├── Create necessary directory structure if it doesn't exist.
+│   │   ├── Open output file in append mode.
+│   │   └── Write formatted message details to file.
+│   └── Return Ok(()) if process is successful.
+│
+└── Sanitize Filename
+    ├── Take filename as input.
+    ├── Create regular expression to match non-alphanumeric characters.
+    ├── Replace all non-alphanumeric characters in filename with underscores.
+    └── Return sanitized filename.
+```
 ## Potential Limitations or Issues
 
 - Performance: Processing large XML files or complex regular expressions can be computationally expensive and may take a significant amount of time.

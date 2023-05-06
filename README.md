@@ -1,6 +1,10 @@
 # About 
 snar3 provides a convenient way refactor SMS message export/backup from an `XML` file to `TSV` files in a structured and organized format that makes it easy to search, sort, and analyze the data.
-Specifically, it groups the messages by contact, year, month, and day, and exports them to TSV files in nested directories based on this grouping. Each TSV file contains the messages for a specific day and has columns for the `sender`, `timestamp`, and `message text`.
+#### Specifically
+- It groups the messages by contact, year, month, and day.
+- Writes messages to TSV files in nested directories based on the above grouping.
+
+Each TSV file contains the messages for a specific day. It has columns for the `sender`, `timestamp`, and `message text`.
 
 ## Requirements
 
